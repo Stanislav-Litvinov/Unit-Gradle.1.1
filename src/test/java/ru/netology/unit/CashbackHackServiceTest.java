@@ -1,5 +1,6 @@
 package ru.netology.unit;
 
+
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
@@ -9,6 +10,7 @@ public class CashbackHackServiceTest {
     @Test
     public void shouldCalculateRemain100() {
         CashbackHackService cashbackHackService = new CashbackHackService();
+
         int amount = 900;
         int actual = cashbackHackService.remain(amount);
         int expected = 100;
