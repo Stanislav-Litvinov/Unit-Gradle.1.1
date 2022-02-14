@@ -1,9 +1,10 @@
 package ru.netology.unit;
 
 import junit.framework.TestCase;
+import org.junit.Assert;
 import org.junit.Test;
 
-public class CashbackHackServiceTest extends TestCase {
+public class CashbackHackServiceTest {
     CashbackHackService cashbackHackService = new CashbackHackService();
 
     @Test
@@ -12,7 +13,7 @@ public class CashbackHackServiceTest extends TestCase {
         int actual = cashbackHackService.remain(amount);
         int expected = 100;
 
-        assertEquals(actual, expected);
+        Assert.assertEquals(actual, expected);
 
     }
 
@@ -22,7 +23,7 @@ public class CashbackHackServiceTest extends TestCase {
         int actual = cashbackHackService.remain(amount);
         int expected = 1000;
 
-        assertEquals(actual, expected);
+        Assert.assertEquals(actual, expected);
 
     }
 
@@ -32,7 +33,7 @@ public class CashbackHackServiceTest extends TestCase {
         int actual = cashbackHackService.remain(amount);
         int expected = 0;
 
-        assertEquals(actual, expected);
+        Assert.assertEquals(actual, expected);
 
     }
 }
